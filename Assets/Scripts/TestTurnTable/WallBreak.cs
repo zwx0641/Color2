@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WallBreak : MonoBehaviour
 {
@@ -31,13 +32,15 @@ public class WallBreak : MonoBehaviour
     private int damage = 0;
 
     public static int yourScore = 0;
-    
+
+    //public Image bloodImage;
+    public GameObject particles;
     
     // Start is called before the first frame update
     void Start()
     {
         soundEffectsInGame = GameObject.Find("LevelSeletor").GetComponent<SoundEffectsInGame>();
-
+        //bloodImage.fillAmount = 1;
     }
 
     // Update is called once per frame
@@ -48,7 +51,6 @@ public class WallBreak : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-      
         //if (collision.collider.tag == "bullet")
         //{
         //    if (collision.collider.gameObject.GetComponent<MeshRenderer>().materials[0].color == this.GetComponent<MeshRenderer>().materials[0].color)  
@@ -65,6 +67,8 @@ public class WallBreak : MonoBehaviour
 
         if(collision.collider.tag == "bullet")
         {
+            //bloodImage.fillAmount = this.health / 200;
+            Instantiate(particles, this.transform.position + new Vector3(0, 0, -2.5f), Quaternion.identity);
             Destroy(collision.collider.gameObject);
             
             //gameObject.GetComponent<Renderer>().material.SetFloat("_DissolveCutoff",0.1f);
