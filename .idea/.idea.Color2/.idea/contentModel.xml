@@ -170,31 +170,6 @@
                 </e>
               </e>
             </e>
-            <e p="Ultimate VFX" t="Include">
-              <e p="Demos" t="Include">
-                <e p="Wallpapers" t="Include">
-                  <e p="Gravity Clock" t="Include">
-                    <e p="scripts" t="Include">
-                      <e p="BillboardCameraPlaneUVFX.cs" t="Include" />
-                      <e p="GravityClockInteractivityUVFX.cs" t="Include" />
-                    </e>
-                  </e>
-                </e>
-              </e>
-              <e p="Expansions" t="Include">
-                <e p="XP - STORM" t="Include">
-                  <e p="scripts" t="Include">
-                    <e p="StormVFXTerrainDemoCamera.cs" t="Include" />
-                    <e p="StormVFXTerrainDemoFollowTargetPosition.cs" t="Include" />
-                  </e>
-                </e>
-                <e p="XP - TITLES" t="Include">
-                  <e p="scripts" t="Include">
-                    <e p="DemoManager_XPTitles.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-            </e>
           </e>
           <e p="Scripting" t="Include">
             <e p="Effects" t="Include">

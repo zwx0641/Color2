@@ -37,7 +37,7 @@ public class ScoreManager : MonoBehaviour
     {
         List.Sort();
         StreamWriter sw = new StreamWriter(Application.persistentDataPath + "/json.txt");
-        if (List.Count > 7) for (int i = 7; i <= List.Count; i++) List.RemoveAt(i);
+        if (List.Count > 7) for (int i = 7; i < List.Count; i++) List.RemoveAt(i);
         for (int i = 0; i < List.Count; i++)
         {
             sw.WriteLine(JsonUtility.ToJson(List[i]));
@@ -57,11 +57,13 @@ public class ScoreManager : MonoBehaviour
             //UpdateJson(GetInput.name, 100);
             ReadJson();
             parentPanel.SetActive(true);
-            parentPanel.transform.DOScale(new Vector3(0.5f, 0.5f, 1), 0.5f);
-            panelImage.DOColor(Color.white, 1.0f);
 
-            for (int i = 0; i < List.Count; i++)
+            for (int i = 0; i < 7; i++)
             {
+                if (List[i] == null)
+                {
+                    break;
+                }
                 GameObject item = Instantiate(itemObj);
                 item.gameObject.SetActive(true);
                 item.transform.SetParent(parentPanel.transform);

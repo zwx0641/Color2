@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class WallBreak : MonoBehaviour
 {
     //墙的生命值
-    private int health = 200;
+    private float health = 200.0f;
 
     //是否打破
     public static bool hitWall;
@@ -29,18 +29,18 @@ public class WallBreak : MonoBehaviour
     
     private float wallH, wallS, wallL;
     
-    private int damage = 0;
+    private float damage = 0;
 
     public static int yourScore = 0;
 
-    //public Image bloodImage;
-    public GameObject particles;
+    public Image bloodImage;
+    //public GameObject particles;
     
     // Start is called before the first frame update
     void Start()
     {
         soundEffectsInGame = GameObject.Find("LevelSeletor").GetComponent<SoundEffectsInGame>();
-        //bloodImage.fillAmount = 1;
+        camera=GameObject.FindWithTag("MainCamera");
     }
 
     // Update is called once per frame
@@ -67,12 +67,11 @@ public class WallBreak : MonoBehaviour
 
         if(collision.collider.tag == "bullet")
         {
-            //bloodImage.fillAmount = this.health / 200;
-            Instantiate(particles, this.transform.position + new Vector3(0, 0, -2.5f), Quaternion.identity);
+//            Instantiate(particles, this.transform.position + new Vector3(0, 0, -2.5f), Quaternion.identity);
             Destroy(collision.collider.gameObject);
             
             //gameObject.GetComponent<Renderer>().material.SetFloat("_DissolveCutoff",0.1f);
-            AudioSource.PlayClipAtPoint(soundEffectsInGame.soundEffects[0], transform.position);
+            AudioSource.PlayClipAtPoint(soundEffectsInGame.soundEffects[1], transform.position,10000.0f);
             
             JudgeColor(collision.collider.gameObject.GetComponent<MeshRenderer>().materials[0].color);
             if (health <= 0 && gameObject.tag != "emptyWall")
@@ -111,11 +110,11 @@ public class WallBreak : MonoBehaviour
         }
         if (collision.collider.tag == "Player")
         {
-            AudioSource.PlayClipAtPoint(soundEffectsInGame.soundEffects[0], transform.position);
+            AudioSource.PlayClipAtPoint(soundEffectsInGame.soundEffects[1], transform.position);
         }
     }
 
-    private int JudgeColor(Color color)
+    private float JudgeColor(Color color)
     {
         float ballH, ballS, ballL;
         Color.RGBToHSV(color, out ballH, out ballS, out ballL);
@@ -146,12 +145,14 @@ public class WallBreak : MonoBehaviour
         health -= damage;
         Debug.Log(health);
         Debug.Log(wallL - ballL);
+        this.bloodImage.fillAmount = this.health / 200;
         return health;
     }
 
     IEnumerator Fall()
     {
         yield return new WaitForSeconds(0.3f);
+        AudioSource.PlayClipAtPoint(soundEffectsInGame.soundEffects[2], transform.position,1.0f);
         Destroy(gameObject);
     }
 }

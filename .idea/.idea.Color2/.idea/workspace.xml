@@ -12,14 +12,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArcSlider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScene/MyLevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/ScoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/MyLevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ArcSlider.cs" />
       </list>
     </option>
   </component>
@@ -75,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565848879967</updated>
-      <workItem from="1565848896608" duration="5029000" />
+      <workItem from="1565848896608" duration="14942000" />
     </task>
     <servers />
   </component>

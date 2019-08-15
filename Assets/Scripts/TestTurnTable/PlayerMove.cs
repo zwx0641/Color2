@@ -48,9 +48,9 @@ public class PlayerMove : MonoBehaviour
     {
         //camera.transform.DOShakePosition(2, Vector3.one, 10, 90);
         Handheld.Vibrate();
-        if (col.gameObject.tag == "end")
+        if (col.gameObject.tag == "outline")
         {
-            AudioSource.PlayClipAtPoint(SoundEffectsInGame.soundEffects[0], transform.position);
+            AudioSource.PlayClipAtPoint(SoundEffectsInGame.soundEffects[3], transform.position);
             if (gameObject.transform.parent.name == "StoryMode1")
             {
                 timer.HadSuccess = 1;
