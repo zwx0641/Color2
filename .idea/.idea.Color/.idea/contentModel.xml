@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\HP\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\HP\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Color.-1932094811.00" t="ExcludeRecursive" />
+    <e p="C:\Users\HP\Desktop\B组\Color" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Book-Page Curl Pro" t="Include">
+          <e p="Editor" t="Include">
+            <e p="BookProEditor.cs" t="Include" />
+          </e>
+          <e p="Examples" t="Include">
+            <e p="scripts" t="Include">
+              <e p="BotAnimationControl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="scripts" t="Include">
+            <e p="AutoFlip.cs" t="Include" />
+            <e p="BookPro.cs" t="Include" />
+            <e p="PageFlipper.cs" t="Include" />
+            <e p="Tween.cs" t="Include" />
+          </e>
+        </e>
+        <e p="DataBase.cs" t="Include" />
+        <e p="Demigiant" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="InkPainter" t="Include">
+          <e p="readme_en.txt" t="Include" />
+          <e p="readme_jp.txt" t="Include" />
+          <e p="Sample" t="Include">
+            <e p="Script" t="Include">
+              <e p="ClipPainter.cs" t="Include" />
+              <e p="CollisionPainter.cs" t="Include" />
+              <e p="CollisionReflectionPainter.cs" t="Include" />
+              <e p="MousePainter.cs" t="Include" />
+              <e p="ReflectPainter.cs" t="Include" />
+              <e p="TextureRecovery.cs" t="Include" />
+            </e>
+            <e p="Shader" t="Include">
+              <e p="TessellateHeightTransform.shader" t="Include" />
+              <e p="VTFHeightTransform.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Script" t="Include">
+            <e p="Core" t="Include">
+              <e p="Brush.cs" t="Include" />
+              <e p="InkCanvas.cs" t="Include" />
+              <e p="Math.cs" t="Include" />
+              <e p="MeshOperator.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="UVChecker.cs" t="Include" />
+            </e>
+            <e p="Effective" t="Include">
+              <e p="GrabArea.cs" t="Include" />
+              <e p="HeightFluid.cs" t="Include" />
+              <e p="ReverseUV.cs" t="Include" />
+              <e p="TextureMorphing.cs" t="Include" />
+            </e>
+            <e p="Util" t="Include">
+              <e p="SceneViewCamera.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Shader" t="Include">
+            <e p="Effective" t="Include">
+              <e p="GrabArea.shader" t="Include" />
+              <e p="HeightDrip.shader" t="Include" />
+              <e p="HeightToColor.shader" t="Include" />
+              <e p="HeightToNormal.shader" t="Include" />
+              <e p="ReverseUV.shader" t="Include" />
+              <e p="SingleColorFill.shader" t="Include" />
+              <e p="TextureMorphing.shader" t="Include" />
+            </e>
+            <e p="Lib" t="Include">
+              <e p="InkPainterFoundation.cginc" t="Include" />
+            </e>
+            <e p="Paint" t="Include">
+              <e p="PaintHeight.shader" t="Include" />
+              <e p="PaintMain.shader" t="Include" />
+              <e p="PaintNormal.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Resources" t="Include">
+          <e p="json.txt" t="Include" />
+        </e>
+        <e p="scripts" t="Include">
+          <e p="AnimationCruve" t="Include">
+            <e p="CruveData.cs" t="Include" />
+            <e p="MyCurveBloodAndAttack.cs" t="Include" />
+            <e p="MyCurveDistance.cs" t="Include" />
+          </e>
+          <e p="APPOpen.cs" t="Include" />
+          <e p="ArcSlider.cs" t="Include" />
+          <e p="EnvirMove" t="Include">
+            <e p="CloudMove.cs" t="Include" />
+            <e p="IMove.cs" t="Include" />
+            <e p="MoonMove.cs" t="Include" />
+          </e>
+          <e p="Music" t="Include">
+            <e p="SoundEffectsInBegin.cs" t="Include" />
+            <e p="SoundEffectsInGame.cs" t="Include" />
+          </e>
+          <e p="NewsMake.cs" t="Include" />
+          <e p="NewsMove.cs" t="Include" />
+          <e p="StoryMode" t="Include">
+            <e p="Examiner.cs" t="Include" />
+            <e p="SceneSwitch.cs" t="Include" />
+            <e p="ScoreManager.cs" t="Include" />
+            <e p="story1v1.cs" t="Include" />
+            <e p="SwitchStory.cs" t="Include" />
+            <e p="Timer.cs" t="Include" />
+            <e p="WallPainter.cs" t="Include" />
+          </e>
+          <e p="Test.cs" t="Include" />
+          <e p="TestBackground" t="Include">
+            <e p="OpenTheGame.cs" t="Include" />
+          </e>
+          <e p="TestTurnTable" t="Include">
+            <e p="Bullet.cs" t="Include" />
+            <e p="JudgeArea.cs" t="Include" />
+            <e p="PlayerMove.cs" t="Include" />
+            <e p="RepeatOn.cs" t="Include" />
+            <e p="TurnTableMove.cs" t="Include" />
+            <e p="WallBreak.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="UIManager.cs" t="Include" />
+          </e>
+          <e p="UIScene" t="Include">
+            <e p="GetInput.cs" t="Include" />
+            <e p="GetNameAndClose.cs" t="Include" />
+            <e p="MyLevelManager.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Shader" t="Include">
+          <e p="Dissolve.shader" t="Include" />
+          <e p="DissolveForSurfce.shader" t="Include" />
+          <e p="MyShader.shader" t="Include" />
+        </e>
+      </e>
+      <e p="Color.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
