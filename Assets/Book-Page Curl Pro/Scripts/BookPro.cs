@@ -35,6 +35,8 @@ public class BookPro : MonoBehaviour
     /// </summary>
     public UnityEvent OnFlip;
     public SoundEffectsInBegin soundEffectsInBegin;
+    private AudioSource AudioSource;
+
 
     /// <summary>
     /// The Current Shown paper (the paper its front shown in right part)
@@ -130,6 +132,7 @@ public class BookPro : MonoBehaviour
         LeftPageShadow.rectTransform.pivot = new Vector2(1, (pageWidth / 2) / shadowPageHeight);
 
         soundEffectsInBegin = GameObject.FindWithTag("GameController").GetComponent<SoundEffectsInBegin>();
+        AudioSource = GameObject.FindWithTag("GameController").GetComponent<AudioSource>();
     }
 
     /// <summary>
@@ -369,7 +372,7 @@ public class BookPro : MonoBehaviour
     }
     public void OnMouseRelease()
     {
-        AudioSource.PlayClipAtPoint(soundEffectsInBegin.soundEffects[2], transform.position);
+        this.AudioSource.PlayOneShot(soundEffectsInBegin.soundEffects[2], 1.0f);
         if (interactable )
             ReleasePage();
     }

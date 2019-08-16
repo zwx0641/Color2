@@ -12,31 +12,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/15/d91db4bf/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Book-Page Curl Pro/Scripts/BookPro.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArcSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScene/GetNameAndClose.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScene/MyLevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScene/GetInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/ScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/MyLevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ArcSlider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Book-Page Curl Pro/Scripts/BookPro.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/GetInput.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/15/d91db4bf/AudioSource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Book-Page Curl Pro/Scripts/BookPro.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/GetNameAndClose.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ArcSlider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" />
       </list>
     </option>
   </component>
@@ -93,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565848879967</updated>
       <workItem from="1565848896608" duration="15018000" />
-      <workItem from="1565922540144" duration="475000" />
+      <workItem from="1565922540144" duration="3719000" />
     </task>
     <servers />
   </component>

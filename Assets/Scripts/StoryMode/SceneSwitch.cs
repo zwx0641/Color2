@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 public class SceneSwitch : MonoBehaviour
 {
     private SoundEffectsInGame soundEffectsInGame;
+    private AudioSource AudioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         soundEffectsInGame = GameObject.Find("LevelSeletor").GetComponent<SoundEffectsInGame>();
+        AudioSource = GameObject.Find("LevelSeletor").GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -20,14 +24,14 @@ public class SceneSwitch : MonoBehaviour
 
     public void switchScene()
     {
-        AudioSource.PlayClipAtPoint(soundEffectsInGame.soundEffects[5], transform.position);
+        this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[5], 1.0f);
         
         StartCoroutine(switchTheScene());
     }
 
     public void loadThisGameAgain()
     {
-        AudioSource.PlayClipAtPoint(soundEffectsInGame.soundEffects[5], transform.position);
+        this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[5], 1.0f);
         UIManager.bulletTime = 50;
         StartCoroutine(loadAgain());
     }

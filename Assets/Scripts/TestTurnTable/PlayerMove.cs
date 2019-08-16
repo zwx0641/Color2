@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class PlayerMove : MonoBehaviour
     public GameObject yourScore;
     
     private SoundEffectsInGame SoundEffectsInGame;
+    private AudioSource AudioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,8 @@ public class PlayerMove : MonoBehaviour
 
         SoundEffectsInGame = GameObject.Find("LevelSeletor").GetComponent<SoundEffectsInGame>();
         distance = 0.025f;
+        AudioSource = GameObject.Find("LevelSeletor").GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -43,6 +48,7 @@ public class PlayerMove : MonoBehaviour
                 transform.GetComponent<Rigidbody>().velocity = Vector3.forward * speed * 15;
             }
         }
+        yourScore.GetComponentInChildren<Text>().text = "你的分数是:\n" + WallBreak.yourScore;
     }
     void OnCollisionEnter(Collision col)
     {
@@ -50,7 +56,7 @@ public class PlayerMove : MonoBehaviour
         Handheld.Vibrate();
         if (col.gameObject.tag == "outline")
         {
-            AudioSource.PlayClipAtPoint(SoundEffectsInGame.soundEffects[3], transform.position);
+            this.AudioSource.PlayOneShot(SoundEffectsInGame.soundEffects[6], 1.0f);
             if (gameObject.transform.parent.name == "StoryMode1")
             {
                 timer.HadSuccess = 1;
