@@ -21,25 +21,30 @@ public class SceneSwitch : MonoBehaviour
     public void switchScene()
     {
         AudioSource.PlayClipAtPoint(soundEffectsInGame.soundEffects[5], transform.position);
+        
         StartCoroutine(switchTheScene());
     }
 
     public void loadThisGameAgain()
     {
         AudioSource.PlayClipAtPoint(soundEffectsInGame.soundEffects[5], transform.position);
+        UIManager.bulletTime = 50;
         StartCoroutine(loadAgain());
     }
 
     IEnumerator loadAgain()
     {
         yield return new WaitForSeconds(0.5f);
+        
         SceneManager.LoadScene("StoryMode");
     }
     
     IEnumerator switchTheScene()
     {
         yield return new WaitForSeconds(0.5f);
+        
         SceneManager.LoadScene("UIScene");
+        
     }
         
 }
