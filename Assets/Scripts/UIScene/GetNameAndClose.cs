@@ -15,6 +15,7 @@ public class GetNameAndClose : MonoBehaviour
     private Camera camera;
 
     public SoundEffectsInBegin soundEffectsInBegin;
+    private AudioSource AudioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,8 @@ public class GetNameAndClose : MonoBehaviour
         openAnim = GameObject.Find("OpenAnim");
         openRender = openAnim.GetComponent<SpriteRenderer>();
         camera = GameObject.Find("UICameraForBook").GetComponent<Camera>();
-        soundEffectsInBegin = GameObject.FindWithTag("GameController").GetComponent<SoundEffectsInBegin>();
+        soundEffectsInBegin = GameObject.FindWithTag("GameController").GetComponent<SoundEffectsInBegin>();         
+        AudioSource = GameObject.FindWithTag("GameController").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,7 +42,7 @@ public class GetNameAndClose : MonoBehaviour
 
     public void InvisableThisPanel()
     {
-        AudioSource.PlayClipAtPoint(soundEffectsInBegin.soundEffects[0], transform.position);
+        this.AudioSource.PlayOneShot(soundEffectsInBegin.soundEffects[0], 1.0f);
         //GetNamePanel.transform.DOScale(new Vector3(0.1f, 0.1f, 0.1f), 0.5f);
         GetNamePanelColor.enabled = false;
     }

@@ -16,6 +16,7 @@ public class GetInput : MonoBehaviour
     private BookPro bookPro;
 
     private SoundEffectsInBegin soundEffectsInBegin;
+    private AudioSource AudioSource;
     
     // Start is called before the first frame update
     void Start()
@@ -24,8 +25,9 @@ public class GetInput : MonoBehaviour
         {
             bookPro = GameObject.Find("Canvas/ChooseLevelPanel/BookPro").GetComponent<BookPro>();
             soundEffectsInBegin = GameObject.FindWithTag("GameController").GetComponent<SoundEffectsInBegin>();
+            AudioSource = GameObject.FindWithTag("GameController").GetComponent<AudioSource>();
         }
-            
+        
 
     }
 
@@ -44,7 +46,7 @@ public class GetInput : MonoBehaviour
 
     public void GetLevelNumber(int num)
     {
-        AudioSource.PlayClipAtPoint(soundEffectsInBegin.soundEffects[0], transform.position);
+        this.AudioSource.PlayOneShot(soundEffectsInBegin.soundEffects[0],1.0f);
         currentPaper = num.ToString();
     }
 }

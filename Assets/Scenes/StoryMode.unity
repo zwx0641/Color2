@@ -694,7 +694,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1722365063}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &78750712
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -943,7 +944,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1653976180}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &111417834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1115,7 +1117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1961561832}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &133018997
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1377,7 +1380,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 996292973}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &176592189
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1566,106 +1570,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186543574}
   m_Mesh: {fileID: 4300072, guid: 6e5bdcd97c4f60b49b0ab30d98266782, type: 3}
---- !u!1 &188074700
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 188074701}
-  - component: {fileID: 188074704}
-  - component: {fileID: 188074703}
-  - component: {fileID: 188074702}
-  m_Layer: 0
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &188074701
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 188074700}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1026719173}
-  - {fileID: 2142648059}
-  m_Father: {fileID: 779372212}
-  m_RootOrder: 47
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &188074702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 188074700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &188074703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 188074700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &188074704
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 188074700}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &202927155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,7 +1710,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1289607167}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &210723837
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1978,7 +1883,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 302039408}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &211685463
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2088,7 +1994,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &213057965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2257,7 +2164,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 867482484}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &219256407
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2426,7 +2334,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 12217980}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &225032223
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2579,7 +2488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 12217980}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &236330543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2825,7 +2735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 757764454}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &246931208
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3103,7 +3014,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &279003964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3700,7 +3612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &330335253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4055,7 +3968,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &364991432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4359,7 +4273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &387194008
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4738,7 +4653,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1635871619}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &445837967
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4910,7 +4826,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1301036101}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &449937679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5296,7 +5213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &494478239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5465,7 +5383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1775295814}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &495855568
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5918,7 +5837,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &532213019
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6107,7 +6027,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &542827816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6560,9 +6481,8 @@ Transform:
   - {fileID: 350240593}
   - {fileID: 1056672090}
   - {fileID: 1303612803}
-  - {fileID: 758546183}
   m_Father: {fileID: 8153549055294856790}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 180, y: -180, z: -180.017}
 --- !u!95 &577832505
 Animator:
@@ -6758,7 +6678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 2143884309}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &582838067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6927,7 +6848,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1036388832}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &590706833
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7281,7 +7203,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &606806471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7418,7 +7341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &627486534
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7707,7 +7631,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 692118512}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &645170250
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7817,7 +7742,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &650355955
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8001,7 +7927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &660819193
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8364,7 +8291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 965691871}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &683780031
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8426,80 +8354,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683780025}
   m_Mesh: {fileID: 4300038, guid: 6e5bdcd97c4f60b49b0ab30d98266782, type: 3}
---- !u!1 &685897710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 685897711}
-  - component: {fileID: 685897713}
-  - component: {fileID: 685897712}
-  m_Layer: 0
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &685897711
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685897710}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1989880593}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &685897712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685897710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c9fcf8f05ee197a408750a8cce439154, type: 3}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 1
-  m_UseSpriteMesh: 0
---- !u!222 &685897713
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685897710}
-  m_CullTransparentMesh: 0
 --- !u!1 &687765116
 GameObject:
   m_ObjectHideFlags: 0
@@ -8512,6 +8366,7 @@ GameObject:
   - component: {fileID: 687765118}
   - component: {fileID: 687765119}
   - component: {fileID: 687765120}
+  - component: {fileID: 687765121}
   m_Layer: 0
   m_Name: LevelSeletor
   m_TagString: Untagged
@@ -8581,6 +8436,102 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6d9754064149e76479141b20626a9a9e, type: 3}
   - {fileID: 8300000, guid: 7ffdfa388aa298c48ad4bce415730dab, type: 3}
   - {fileID: 8300000, guid: 318affa7aa32d284794cfbb9f40d4141, type: 3}
+--- !u!82 &687765121
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687765116}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &688976814
 GameObject:
   m_ObjectHideFlags: 0
@@ -8875,7 +8826,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 54383114}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &698821425
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9136,7 +9088,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &715966928
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9365,7 +9318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 51069271}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &746471984
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9564,106 +9518,6 @@ Transform:
   m_Father: {fileID: 581569913}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &758546182
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 758546183}
-  - component: {fileID: 758546186}
-  - component: {fileID: 758546185}
-  - component: {fileID: 758546184}
-  m_Layer: 0
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &758546183
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758546182}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1606249257}
-  - {fileID: 1421673741}
-  m_Father: {fileID: 577832504}
-  m_RootOrder: 47
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &758546184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758546182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &758546185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758546182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &758546186
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758546182}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &759314960
 GameObject:
   m_ObjectHideFlags: 0
@@ -9712,7 +9566,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &759314963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9906,9 +9761,8 @@ Transform:
   - {fileID: 911263794}
   - {fileID: 1393988389}
   - {fileID: 1653949673}
-  - {fileID: 188074701}
   m_Father: {fileID: 8153549055294856790}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 180, y: -180, z: -180.017}
 --- !u!95 &779372213
 Animator:
@@ -10501,7 +10355,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1610330683}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &850042323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10624,7 +10479,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &855937472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10793,7 +10649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1939644176}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &857407537
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11246,7 +11103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &875911948
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11442,80 +11300,6 @@ Transform:
   m_Father: {fileID: 182885175}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &884750589
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 884750590}
-  - component: {fileID: 884750592}
-  - component: {fileID: 884750591}
-  m_Layer: 0
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &884750590
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884750589}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1989880593}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &884750591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884750589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 13273797b34474d4695806dc2f4abf4a, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &884750592
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884750589}
-  m_CullTransparentMesh: 0
 --- !u!1 &886962074
 GameObject:
   m_ObjectHideFlags: 0
@@ -11564,7 +11348,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &886962077
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11810,6 +11595,108 @@ Transform:
   m_Father: {fileID: 794614323}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &914656525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8153549056066827626, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+    type: 3}
+  m_PrefabInstance: {fileID: 8153549055294856789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &914656529
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914656525}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &924195471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8153549055896239784, guid: 1ad8d1176d015a54f9dcda5d031f9add,
@@ -12011,7 +11898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1673959792}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &939766139
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12181,7 +12069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1610330683}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &958130474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12447,7 +12336,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &975609427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12554,7 +12444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &980212420
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12859,7 +12750,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1011213301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12966,7 +12858,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1011582722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13135,7 +13028,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 656512702}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1012647832
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13275,7 +13169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1018263947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13471,80 +13366,6 @@ Transform:
   m_Father: {fileID: 1117066165}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1026719172
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1026719173}
-  - component: {fileID: 1026719175}
-  - component: {fileID: 1026719174}
-  m_Layer: 0
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1026719173
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026719172}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 188074701}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1026719174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026719172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 13273797b34474d4695806dc2f4abf4a, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &1026719175
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026719172}
-  m_CullTransparentMesh: 0
 --- !u!1 &1030251792
 GameObject:
   m_ObjectHideFlags: 0
@@ -13655,7 +13476,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1745455332}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1030251798
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14110,7 +13932,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1082743580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14343,7 +14166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1907615831}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1093001272
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14483,7 +14307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1099348104
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14900,7 +14725,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1971987045}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1131025004
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15437,7 +15263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 2041218271}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1157705754
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15609,7 +15436,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 579800906}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1161892174
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15858,7 +15686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 512083828}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1166030938
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16120,7 +15949,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 512988668}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1207320353
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16328,7 +16158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1020234310}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1217980302
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16655,7 +16486,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1251590567
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16884,7 +16716,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1488084132}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1258396239
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17097,7 +16930,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1283476123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17266,7 +17100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 891390028}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1286912417
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17453,7 +17288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1289866772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17622,7 +17458,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 696808321}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1291819621
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17958,106 +17795,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303612802}
   m_Mesh: {fileID: 4300074, guid: 6e5bdcd97c4f60b49b0ab30d98266782, type: 3}
---- !u!1 &1318089180
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1318089181}
-  - component: {fileID: 1318089184}
-  - component: {fileID: 1318089183}
-  - component: {fileID: 1318089182}
-  m_Layer: 0
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1318089181
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318089180}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1828241485}
-  - {fileID: 1357204510}
-  m_Father: {fileID: 1698874457}
-  m_RootOrder: 47
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &1318089182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318089180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1318089183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318089180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &1318089184
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318089180}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &1324058380
 GameObject:
   m_ObjectHideFlags: 0
@@ -18179,80 +17916,6 @@ Transform:
   m_Father: {fileID: 779372212}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1357204509
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1357204510}
-  - component: {fileID: 1357204512}
-  - component: {fileID: 1357204511}
-  m_Layer: 0
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1357204510
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357204509}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1318089181}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1357204511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357204509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c9fcf8f05ee197a408750a8cce439154, type: 3}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 1
-  m_UseSpriteMesh: 0
---- !u!222 &1357204512
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357204509}
-  m_CullTransparentMesh: 0
 --- !u!1 &1360476492
 GameObject:
   m_ObjectHideFlags: 0
@@ -18588,7 +18251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1399906862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18695,7 +18359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1403436297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18894,7 +18559,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1150795940}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1418544978
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18956,80 +18622,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418544972}
   m_Mesh: {fileID: 4300048, guid: 6e5bdcd97c4f60b49b0ab30d98266782, type: 3}
---- !u!1 &1421673740
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1421673741}
-  - component: {fileID: 1421673743}
-  - component: {fileID: 1421673742}
-  m_Layer: 0
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1421673741
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421673740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 758546183}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1421673742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421673740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c9fcf8f05ee197a408750a8cce439154, type: 3}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 1
-  m_UseSpriteMesh: 0
---- !u!222 &1421673743
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421673740}
-  m_CullTransparentMesh: 0
 --- !u!1 &1422740282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8153549056488793771, guid: 1ad8d1176d015a54f9dcda5d031f9add,
@@ -19253,7 +18845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1140604014}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1443528442
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19425,7 +19018,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 860666822}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1451776500
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19905,8 +19499,8 @@ RectTransform:
   m_Children:
   - {fileID: 314130212}
   - {fileID: 1110197298}
-  m_Father: {fileID: 1577986299}
-  m_RootOrder: 49
+  m_Father: {fileID: 8153549055294856790}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -20188,7 +19782,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1538660427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20520,7 +20115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 186543574}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1556806216
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20630,7 +20226,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1559316394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20799,7 +20396,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 97570835}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 0}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1563452663
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20909,7 +20507,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1575643769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21134,7 +20733,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 576343796}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1590088333
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21241,7 +20841,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1600519435
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21330,80 +20931,6 @@ Transform:
   m_Father: {fileID: 794614323}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1606249256
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1606249257}
-  - component: {fileID: 1606249259}
-  - component: {fileID: 1606249258}
-  m_Layer: 0
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1606249257
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606249256}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 758546183}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1606249258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606249256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 13273797b34474d4695806dc2f4abf4a, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &1606249259
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606249256}
-  m_CullTransparentMesh: 0
 --- !u!1 &1607441013
 GameObject:
   m_ObjectHideFlags: 0
@@ -21590,7 +21117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1621004666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21697,7 +21225,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1622838063
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22414,7 +21943,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1674330551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22638,9 +22168,8 @@ Transform:
   - {fileID: 581569913}
   - {fileID: 812701111}
   - {fileID: 867507656}
-  - {fileID: 1318089181}
   m_Father: {fileID: 8153549055294856790}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 180, y: -180, z: -180.017}
 --- !u!95 &1698874458
 Animator:
@@ -22709,7 +22238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1707369286
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22923,7 +22453,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1717719329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23199,7 +22730,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 679066043}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1723829243
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23528,7 +23060,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1740246243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23662,9 +23195,8 @@ Transform:
   - {fileID: 182885175}
   - {fileID: 1997532890}
   - {fileID: 503676476}
-  - {fileID: 1989880593}
   m_Father: {fileID: 8153549055294856790}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 180, y: -180, z: -180.017}
 --- !u!95 &1740264122
 Animator:
@@ -23902,7 +23434,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1630008292}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1748532193
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24074,7 +23607,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1908720007}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1749546170
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24243,7 +23777,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 576343796}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1751220222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24599,7 +24134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1783538526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24768,7 +24304,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 879727983}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1786492615
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25060,7 +24597,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1082361698}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1803184363
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25201,80 +24739,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8153549055294856789}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1828241484
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1828241485}
-  - component: {fileID: 1828241487}
-  - component: {fileID: 1828241486}
-  m_Layer: 0
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1828241485
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828241484}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1318089181}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1828241486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828241484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 13273797b34474d4695806dc2f4abf4a, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &1828241487
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828241484}
-  m_CullTransparentMesh: 0
 --- !u!1 &1831416119
 GameObject:
   m_ObjectHideFlags: 0
@@ -25546,7 +25010,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1870265168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25745,7 +25210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1714911118}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &1884530841
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25975,7 +25441,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1905327740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26236,7 +25703,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1921855307
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26377,7 +25845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &1932801519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26834,106 +26303,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971987045}
   m_Mesh: {fileID: 4300078, guid: 6e5bdcd97c4f60b49b0ab30d98266782, type: 3}
---- !u!1 &1989880592
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1989880593}
-  - component: {fileID: 1989880596}
-  - component: {fileID: 1989880595}
-  - component: {fileID: 1989880594}
-  m_Layer: 0
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1989880593
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989880592}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 884750590}
-  - {fileID: 685897711}
-  m_Father: {fileID: 1740264121}
-  m_RootOrder: 47
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &1989880594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989880592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1989880595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989880592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &1989880596
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989880592}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &1997532889
 GameObject:
   m_ObjectHideFlags: 0
@@ -27121,7 +26490,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1945407063}
-  bloodImage: {fileID: 2142648060}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &2003236000
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27299,7 +26669,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1520460238}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &2009181157
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27471,7 +26842,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 373860470}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &2011777229
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27581,7 +26953,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &2013144427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27975,7 +27348,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1661114510}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &2055920140
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28237,7 +27611,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1466245541}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &2082995096
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28409,7 +27784,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 1163152220}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &2085326399
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28610,7 +27986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &2095192260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28799,7 +28176,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &2118836164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29028,7 +28406,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 305500450}
-  bloodImage: {fileID: 1357204511}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!54 &2132069026
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29197,7 +28576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 8153549055294856791}
   bigWall: {fileID: 2143884309}
-  bloodImage: {fileID: 1421673742}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &2137045060
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29326,7 +28706,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   road: {fileID: 0}
   bigWall: {fileID: 0}
-  bloodImage: {fileID: 685897712}
+  bloodImage: {fileID: 1110197300}
+  particles: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
 --- !u!65 &2138542150
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29385,80 +28766,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138542147}
   m_Mesh: {fileID: 4300012, guid: 6e5bdcd97c4f60b49b0ab30d98266782, type: 3}
---- !u!1 &2142648058
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2142648059}
-  - component: {fileID: 2142648061}
-  - component: {fileID: 2142648060}
-  m_Layer: 0
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2142648059
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142648058}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 188074701}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2142648060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142648058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c9fcf8f05ee197a408750a8cce439154, type: 3}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 1
-  m_UseSpriteMesh: 0
---- !u!222 &2142648061
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142648058}
-  m_CullTransparentMesh: 0
 --- !u!1 &2143884309
 GameObject:
   m_ObjectHideFlags: 0
@@ -30109,6 +29416,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549054931887419, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549055136160175, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bigWall
@@ -30119,6 +29431,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549055136160175, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549055254408367, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bigWall
@@ -30129,6 +29446,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549055254408367, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549055291416845, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bigWall
@@ -30139,6 +29461,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549055291416845, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549055409145479, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bigWall
@@ -30149,6 +29476,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549055409145479, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549055773216698, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bigWall
@@ -30159,6 +29491,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549055773216698, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549055896239786, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bigWall
@@ -30184,6 +29521,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549055999488214, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549056055924244, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bigWall
@@ -30194,6 +29536,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549056055924244, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549056077384576, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bigWall
@@ -30204,6 +29551,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549056077384576, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549056306038846, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bigWall
@@ -30214,6 +29566,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549056306038846, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549056435304738, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bigWall
@@ -30224,6 +29581,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549056435304738, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549056436096140, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: m_EffectColor.r
@@ -30259,6 +29621,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549056785407443, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549054972669374, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -30384,6 +29751,11 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549056518663754, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549055925062941, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -30548,22 +29920,22 @@ PrefabInstance:
     - target: {fileID: 5355046117562199821, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5355046117562199821, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5355046117706212418, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5355046117706212418, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5355046117706212418, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
@@ -30688,61 +30060,121 @@ PrefabInstance:
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549054855477299, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549054995044379, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: bloodImage
+      value: 
+      objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549054995044379, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
+    - target: {fileID: 8153549055259531944, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
     - target: {fileID: 8153549055259531944, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
+    - target: {fileID: 8153549055669269463, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
     - target: {fileID: 8153549055669269463, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
+    - target: {fileID: 8153549056320721174, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
     - target: {fileID: 8153549056320721174, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
+    - target: {fileID: 8153549056352476352, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
     - target: {fileID: 8153549056352476352, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
+    - target: {fileID: 8153549056367781050, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
     - target: {fileID: 8153549056367781050, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
+    - target: {fileID: 8153549056391589298, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
     - target: {fileID: 8153549056391589298, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
+    - target: {fileID: 8153549056426349762, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
     - target: {fileID: 8153549056426349762, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
+    - target: {fileID: 8153549056568488356, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
     - target: {fileID: 8153549056568488356, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
+    - target: {fileID: 8153549056583515376, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
     - target: {fileID: 8153549056583515376, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
-      propertyPath: bloodImage
+      propertyPath: particles
       value: 
-      objectReference: {fileID: 1110197300}
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 8153549056644196813, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: bloodImage
       value: 
       objectReference: {fileID: 1110197300}
+    - target: {fileID: 8153549056644196813, guid: 1ad8d1176d015a54f9dcda5d031f9add,
+        type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 130146, guid: c1e1630e03a3c1a4989b4c15cd619ca9, type: 3}
     - target: {fileID: 5355046117706212419, guid: 1ad8d1176d015a54f9dcda5d031f9add,
         type: 3}
       propertyPath: m_Sprite

@@ -45,6 +45,8 @@ public class ArcSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public GameObject yourScore;
 
     private SoundEffectsInGame soundEffectsInGame;
+    private AudioSource AudioSource;
+
 
     //忽略圈内的交互
     public float ignoreInTouchRadiusHandleOffset = 10;
@@ -72,6 +74,7 @@ public class ArcSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         timer = GameObject.FindWithTag("GameController").GetComponent<Timer>();
         camera = GameObject.Find("Main Camera").gameObject;
         soundEffectsInGame = GameObject.Find("LevelSeletor").GetComponent<SoundEffectsInGame>();
+        AudioSource = GameObject.Find("LevelSeletor").GetComponent<AudioSource>();
 
     }
 
@@ -163,11 +166,12 @@ public class ArcSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     //实例化子弹
     private void InstantiateBullet()
     {
-	    AudioSource.PlayClipAtPoint(soundEffectsInGame.soundEffects[0], camera.transform.position,10000.0f);
+	    this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[0], 1.0f);
 
 	    UIManager.bulletTime--;
 	    if (UIManager.bulletTime < 0)
 	    {
+		    this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[6], 1.0f);
 		    timer.HadSuccess = 1;
 		    camera.transform.DOMove(new Vector3(0.2799f, -1.010172f, 7.6226f), 2.0f);
 		    camera.transform.DORotate(new Vector3(0, 0, 0), 2.0f);
