@@ -15,8 +15,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/15/d91db4bf/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Book-Page Curl Pro/Scripts/BookPro.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/Examiner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" root0="FORCE_HIGHLIGHTING" />
@@ -32,15 +34,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/ScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/MyLevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/GetInput.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/15/d91db4bf/AudioSource.cs" />
         <option value="$PROJECT_DIR$/Assets/Book-Page Curl Pro/Scripts/BookPro.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/GetNameAndClose.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArcSlider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/Examiner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/GetNameAndClose.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/GetInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" />
       </list>
     </option>
   </component>
@@ -78,10 +82,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="14876">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="5672">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14876" />
+      <option name="pid" value="5672" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -97,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565848879967</updated>
       <workItem from="1565848896608" duration="15018000" />
-      <workItem from="1565922540144" duration="3719000" />
+      <workItem from="1565922540144" duration="31620000" />
     </task>
     <servers />
   </component>

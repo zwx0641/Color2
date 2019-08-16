@@ -16,11 +16,6 @@ public class SceneSwitch : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void switchScene()
     {
@@ -39,16 +34,15 @@ public class SceneSwitch : MonoBehaviour
     IEnumerator loadAgain()
     {
         yield return new WaitForSeconds(0.5f);
-        
+        WallBreak.yourScore = 0;
         SceneManager.LoadScene("StoryMode");
     }
     
     IEnumerator switchTheScene()
     {
         yield return new WaitForSeconds(0.5f);
-        
+        WallBreak.yourScore = 0;
+        UIManager.bulletTime = 50;
         SceneManager.LoadScene("UIScene");
-        
     }
-        
 }

@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
     {
         if (bulletTime >= 0)
         {
-            bulletTimetext.text = "剩余: "+ bulletTime + "个球";
+            bulletTimetext.text = bulletTime.ToString();
         }
     }
 }

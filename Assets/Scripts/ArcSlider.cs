@@ -166,12 +166,12 @@ public class ArcSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     //实例化子弹
     private void InstantiateBullet()
     {
-	    this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[0], 1.0f);
+	    this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[0], 0.1f);
 
 	    UIManager.bulletTime--;
 	    if (UIManager.bulletTime < 0)
 	    {
-		    this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[6], 1.0f);
+		    this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[6], 0.1f);
 		    timer.HadSuccess = 1;
 		    camera.transform.DOMove(new Vector3(0.2799f, -1.010172f, 7.6226f), 2.0f);
 		    camera.transform.DORotate(new Vector3(0, 0, 0), 2.0f);
@@ -197,6 +197,8 @@ public class ArcSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     IEnumerator CallYourScores()
     {
 	    yield return new WaitForSeconds(2);
+	    GameObject.Find("Blood").SetActive(false);
+	    GameObject.Find("BulletTimeText").SetActive(false);
 	    yourScore.SetActive(true);
 	    yourScore.transform.DOScale(new Vector3(1, 1, 0), 1f);
     }

@@ -33,9 +33,17 @@ public class WallBreak : MonoBehaviour
 
     public static int yourScore = 0;
 
+    private bool isOneshot;
+
+    public static bool falseShoot;
+    
     public Image bloodImage;
     public GameObject particles;
     private AudioSource AudioSource;
+
+    private Text level;
+    
+    private Text rewardText;
 
     // Start is called before the first frame update
     void Start()
@@ -43,14 +51,10 @@ public class WallBreak : MonoBehaviour
         soundEffectsInGame = GameObject.Find("LevelSeletor").GetComponent<SoundEffectsInGame>();
         camera=GameObject.FindWithTag("MainCamera");
         AudioSource = GameObject.Find("LevelSeletor").GetComponent<AudioSource>();
-
+        rewardText = GameObject.Find("RewardText").GetComponent<Text>();
+        level = GameObject.Find("Level").GetComponent<Text>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -74,15 +78,20 @@ public class WallBreak : MonoBehaviour
             Destroy(collision.collider.gameObject);
             
             //gameObject.GetComponent<Renderer>().material.SetFloat("_DissolveCutoff",0.1f);
-            this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[1], 1.0f);
-            
-            JudgeColor(collision.collider.gameObject.GetComponent<MeshRenderer>().materials[0].color);
+            //this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[1], 1.0f);
+
+            if (gameObject.tag != "emptyWall")
+            {
+                JudgeColor(collision.collider.gameObject.GetComponent<MeshRenderer>().materials[0].color);
+            }
             if (health <= 0 && gameObject.tag != "emptyWall")
             {
 /*              
                 Destroy(collision.collider.gameObject);
 */
+                falseShoot = false;
                 yourScore++;
+                level.text = yourScore.ToString();
                 gameObject.transform.DOLocalRotate(new Vector3(-90, 0, 0), 0.5f);
 
                 gameObject.transform.localPosition = new Vector3(gameObject.transform.localPosition.x, 
@@ -92,14 +101,7 @@ public class WallBreak : MonoBehaviour
 
                 fadeSpeed = Mathf.Lerp(fadeSpeed, 0.45f,1.0f);
                 gameObject.GetComponent<Renderer>().material.SetFloat("_DissolveCutoff", fadeSpeed);
-                
-/*
-                road.GetComponent<MeshRenderer>().materials[0].color =
-                    gameObject.GetComponent<MeshRenderer>().materials[0].color;
-*/
 
-                //gameObject.GetComponent<MeshRenderer>().materials[0].shader = Shader.Find("Standard");
-                
                 StartCoroutine(Fall());
 
                 hitWall = true;
@@ -113,7 +115,7 @@ public class WallBreak : MonoBehaviour
         }
         if (collision.collider.tag == "Player")
         {
-            this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[1], 1.0f);
+            this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[1], 0.1f);
         }
     }
 
@@ -130,32 +132,107 @@ public class WallBreak : MonoBehaviour
         if (wallL - ballL > -2 && wallL - ballL < 2)
         {
             damage = 200;
+            isOneshot = true;
+            UIManager.bulletTime += 2;
+            rewardText.DOFade(1, 0.1f);
+            rewardText.DOText("+2", 0.1f);
+            rewardText.DOFade(0, 1.5f);
         }
-        else if (wallL - ballL > -5 && wallL - ballL < 5)
+        else if (wallL - ballL > -4 && wallL - ballL < 4)
         {
-            damage = 100;
+            damage = 180;
+            falseShoot = true;
+            Examiner.Makeup -= 0.06f;
+        }
+        else if (wallL - ballL > -6 && wallL - ballL <6)
+        {
+            damage = 150;
+            falseShoot = true;
+            Examiner.Makeup -= 0.06f;
+
+        }
+        else if (wallL - ballL > -8 && wallL - ballL <8)
+        {
+            damage = 130;
+            falseShoot = true;
+            Examiner.Makeup -= 0.06f;
+
         }
         else if (wallL - ballL > -10 && wallL - ballL <10)
         {
-            damage = 50;
+            damage = 100;
+            falseShoot = true;
+            Examiner.Makeup -= 0.06f;
+
+        }
+        else if (wallL - ballL > -12 && wallL - ballL < 12)
+        {
+            damage = 80;
+            falseShoot = true;
+            Examiner.Makeup -= 0.06f;
+        }
+        else if (wallL - ballL > -14 && wallL - ballL <14)
+        {
+            damage = 60;
+            falseShoot = true;
+            Examiner.Makeup -= 0.06f;
+
+        }
+        else if (wallL - ballL > -16 && wallL - ballL <16)
+        {
+            damage = 40;
+            falseShoot = true;
+            Examiner.Makeup -= 0.06f;
+
+        }
+        else if (wallL - ballL > -18 && wallL - ballL <18)
+        {
+            damage = 30;
+            falseShoot = true;
+            Examiner.Makeup -= 0.06f;
+
+        }
+        else if (wallL - ballL > -20 && wallL - ballL <20)
+        {
+            damage = 10;
+            falseShoot = true;
+            Examiner.Makeup -= 0.06f;
+
         }
         else
         {
             damage = 0;
+            falseShoot = true;
+            Examiner.Makeup -= 0.06f;
         }
 
-
+        StartCoroutine(SetFalseShoot());
+        
         health -= damage;
-        Debug.Log(health);
-        Debug.Log(wallL - ballL);
-        this.bloodImage.fillAmount = this.health / 200;
+       
+        bloodImage.fillAmount = health / 200;
         return health;
     }
 
     IEnumerator Fall()
     {
         yield return new WaitForSeconds(0.3f);
-        this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[2], 1.0f);
+        if (isOneshot)
+        {
+            AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[3], 0.1f);
+        }
+        else
+        {
+            AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[2], 0.1f);
+        }
         Destroy(gameObject);
     }
+
+    IEnumerator SetFalseShoot()
+    {
+        yield return new WaitForSeconds(0.5f);
+        falseShoot = false;
+    }
+
+
 }

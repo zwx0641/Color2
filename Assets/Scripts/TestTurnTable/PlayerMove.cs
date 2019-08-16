@@ -22,6 +22,9 @@ public class PlayerMove : MonoBehaviour
     private SoundEffectsInGame SoundEffectsInGame;
     private AudioSource AudioSource;
 
+    public ParticleSystem particleB;
+    public ParticleSystem particleY;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +37,6 @@ public class PlayerMove : MonoBehaviour
         SoundEffectsInGame = GameObject.Find("LevelSeletor").GetComponent<SoundEffectsInGame>();
         distance = 0.025f;
         AudioSource = GameObject.Find("LevelSeletor").GetComponent<AudioSource>();
-
     }
 
     // Update is called once per frame
@@ -43,12 +45,30 @@ public class PlayerMove : MonoBehaviour
         if (timer.HadSuccess != 1)
         {
             transform.GetComponent<Rigidbody>().velocity = Vector3.forward * speed;
+            var shape3 = particleB.shape;
+            shape3.radius = 31.65f;
+            var shape4 = particleY.shape;
+            shape4.radius = 31.65f;
+
             if (WallBreak.hitWall)
             {
                 transform.GetComponent<Rigidbody>().velocity = Vector3.forward * speed * 15;
+                var shape = particleB.shape;
+                shape.radius = 3.65f;
+                var shape2 = particleY.shape;
+                shape2.radius = 3.65f;    
+            }
+
+            if (WallBreak.falseShoot)
+            {
+                transform.GetComponent<Rigidbody>().velocity = Vector3.forward * speed * 5;
+                var shape5 = particleB.shape;
+                shape3.radius = 10.0f;
+                var shape6 = particleY.shape;
+                shape4.radius = 10.0f;
             }
         }
-        yourScore.GetComponentInChildren<Text>().text = "你的分数是:\n" + WallBreak.yourScore;
+        yourScore.GetComponentInChildren<Text>().text = "本次得分:\n" + WallBreak.yourScore;
     }
     void OnCollisionEnter(Collision col)
     {
@@ -56,7 +76,7 @@ public class PlayerMove : MonoBehaviour
         Handheld.Vibrate();
         if (col.gameObject.tag == "outline")
         {
-            this.AudioSource.PlayOneShot(SoundEffectsInGame.soundEffects[6], 1.0f);
+            this.AudioSource.PlayOneShot(SoundEffectsInGame.soundEffects[6], 0.1f);
             if (gameObject.transform.parent.name == "StoryMode1")
             {
                 timer.HadSuccess = 1;
@@ -94,6 +114,8 @@ public class PlayerMove : MonoBehaviour
     IEnumerator CallScores()
     {
         yield return new WaitForSeconds(2);
+        GameObject.Find("Blood").SetActive(false);
+        GameObject.Find("BulletTimeText").SetActive(false);
         yourScore.SetActive(true);
         yourScore.transform.DOScale(new Vector3(1, 1, 0), 1f);
     }
