@@ -369,7 +369,7 @@ public class BookPro : MonoBehaviour
     }
     public void OnMouseRelease()
     {
-        AudioSource.PlayClipAtPoint(soundEffectsInBegin.soundEffects[0], transform.position);
+        AudioSource.PlayClipAtPoint(soundEffectsInBegin.soundEffects[2], transform.position);
         if (interactable )
             ReleasePage();
     }

@@ -727,7 +727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempProgress: 0
   text: {fileID: 0}
-  slider: {fileID: 0}
+  image: {fileID: 0}
 --- !u!1 &1123815840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1217,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 3c4b843c4b6257e4da83ad6d45136f11,
         type: 3}
+    - target: {fileID: 949631825, guid: 3b11136cfd0d23540940791a20f3e1de, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b5312fb61722f0640b4f30430bd4e0e6,
+        type: 3}
+    - target: {fileID: 1818642602, guid: 3b11136cfd0d23540940791a20f3e1de, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b5312fb61722f0640b4f30430bd4e0e6,
+        type: 3}
+    - target: {fileID: 1841216167, guid: 3b11136cfd0d23540940791a20f3e1de, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b5312fb61722f0640b4f30430bd4e0e6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b11136cfd0d23540940791a20f3e1de, type: 3}
 --- !u!1 &1392352762
@@ -1376,7 +1391,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundEffects:
-  - {fileID: 8300000, guid: 6f0ba5ded98396e49906eaf161d48271, type: 3}
+  - {fileID: 8300000, guid: 6d9754064149e76479141b20626a9a9e, type: 3}
+  - {fileID: 8300000, guid: 7ffdfa388aa298c48ad4bce415730dab, type: 3}
+  - {fileID: 8300000, guid: 14071bc47baed68448e0932f44ab1e79, type: 3}
 --- !u!1 &1479894632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,7 +1674,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b5312fb61722f0640b4f30430bd4e0e6, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
