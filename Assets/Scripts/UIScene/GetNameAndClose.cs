@@ -51,4 +51,13 @@ public class GetNameAndClose : MonoBehaviour
         hintText.GetComponent<Text>().DOFade(1, 0.5f);
         Destroy(hintText,5.0f);
     }
+
+    public void ExitGame()
+    {
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                Application.Quit();
+        #endif
+    }
 }

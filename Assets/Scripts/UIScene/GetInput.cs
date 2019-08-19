@@ -23,6 +23,8 @@ public class GetInput : MonoBehaviour
     private Text text1;
 
     private Text text2;
+
+    private GameObject button;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +36,7 @@ public class GetInput : MonoBehaviour
             AudioSource = GameObject.FindWithTag("GameController").GetComponent<AudioSource>();
             text1 = GameObject.Find("HintText2").GetComponent<Text>();
             text2 = GameObject.Find("HintText3").GetComponent<Text>();
-
+            button = GameObject.Find("Exit");
         }
 
         if (SceneManager.GetActiveScene().name == "StoryMode")
@@ -71,6 +73,18 @@ public class GetInput : MonoBehaviour
                 text2.DOFade(1, 0.5f);
             }
 
+            if (currentPaper != "0")
+            {
+                button.GetComponent<Image>().DOFade(0, 0.5f);
+                button.GetComponent<Button>().interactable = false;
+            }
+
+            if (currentPaper == "0")
+            {
+                button.GetComponent<Image>().DOFade(1, 0.5f);
+                button.GetComponent<Button>().interactable = true;
+            }
+            ActiveProject();
         }
     }
 
@@ -94,10 +108,20 @@ public class GetInput : MonoBehaviour
             text2.DOFade(0, 0.5f);
         }
 
+        if (currentPaper != "2")
+        {
+            text1.DOFade(0, 0.5f);
+        }
+
         if (currentPaper == "3")
         {
             text1.DOFade(0, 0.5f);
             text2.DOFade(1, 0.5f);
+        }
+
+        if (currentPaper != "3")
+        {
+            text2.DOFade(0, 0.5f);
         }
     }
 }
