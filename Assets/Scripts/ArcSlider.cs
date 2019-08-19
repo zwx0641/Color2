@@ -199,6 +199,7 @@ public class ArcSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	    yield return new WaitForSeconds(2);
 	    GameObject.Find("Blood").SetActive(false);
 	    GameObject.Find("BulletTimeText").SetActive(false);
+	    GameObject.Find("ChromaticRing").SetActive(false);
 	    yourScore.SetActive(true);
 	    yourScore.transform.DOScale(new Vector3(1, 1, 0), 1f);
     }
