@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f3c1c7-2056-4d0c-af33-89df3730a4c2" name="Default Changelist" comment="" />
+    <list default="true" id="31f3c1c7-2056-4d0c-af33-89df3730a4c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Color2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Color2/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Color2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Color2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InkPainter/Resources/Es.InkPainter.PaintMain.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InkPainter/Resources/Es.InkPainter.PaintMain.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,42 +17,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/15/d91db4bf/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Book-Page Curl Pro/Scripts/BookPro.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/Examiner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/Timer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Music/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArcSlider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScene/GetNameAndClose.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScene/MyLevelManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScene/GetInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArcSlider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScene/GetInput.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/ScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/MyLevelManager.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/15/d91db4bf/AudioSource.cs" />
-        <option value="$PROJECT_DIR$/Assets/Book-Page Curl Pro/Scripts/BookPro.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TestUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/Examiner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/GetNameAndClose.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIScene/GetInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/WallPainter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Music/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/WallBreak.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArcSlider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StoryMode/SceneSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestTurnTable/PlayerMove.cs" />
       </list>
     </option>
   </component>
@@ -63,7 +55,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.build.unityPlugin" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -85,10 +77,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="5672">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="14876">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="5672" />
+      <option name="pid" value="14876" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -103,9 +95,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565848879967</updated>
-      <workItem from="1565848896608" duration="15018000" />
-      <workItem from="1565922540144" duration="32387000" />
-      <workItem from="1566180574011" duration="8576000" />
+      <workItem from="1565848896608" duration="14942000" />
+      <workItem from="1565921444397" duration="687000" />
+      <workItem from="1565922420776" duration="1278000" />
+      <workItem from="1566180524453" duration="1110000" />
     </task>
     <servers />
   </component>
@@ -131,6 +124,8 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="637" y="240" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" />
+    <state x="637" y="240" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1440.900/1920.1080" />
     <state width="1877" height="347" key="GridCell.Tab.0.bottom" />
     <state width="1877" height="347" key="GridCell.Tab.0.bottom/1920.1080" />
     <state width="1877" height="347" key="GridCell.Tab.0.center" />
@@ -163,10 +158,8 @@
     <state width="1877" height="347" key="GridCell.Tab.3.left/1920.1080" />
     <state width="1877" height="347" key="GridCell.Tab.3.right" />
     <state width="1877" height="347" key="GridCell.Tab.3.right/1920.1080" />
-    <state x="616" y="240" key="run.anything.popup" />
-    <state x="616" y="240" key="run.anything.popup/1920.1080" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.1080" />
+    <state x="446" y="147" key="SettingsEditor" />
+    <state x="446" y="147" key="SettingsEditor/1440.900/1920.1080" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
