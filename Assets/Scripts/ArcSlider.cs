@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -76,6 +77,25 @@ public class ArcSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         soundEffectsInGame = GameObject.Find("LevelSeletor").GetComponent<SoundEffectsInGame>();
         AudioSource = GameObject.Find("LevelSeletor").GetComponent<AudioSource>();
 
+    }
+
+    private void Update()
+    {
+	    if (UIManager.bulletTime < 0)
+	    {
+		    
+		    camera.transform.DOMove(new Vector3(0.2799f, -1.010172f, 7.6226f), 2.0f);
+		    camera.transform.DORotate(new Vector3(0, 0, 0), 2.0f);
+		    Camera.main.orthographic = true;
+		    Camera.main.orthographicSize = 4.2f;
+		    camera.GetComponentInParent<Rigidbody>().velocity = Vector3.zero;
+
+
+		    if (Input.GetMouseButtonDown(0))
+		    {
+			    StartCoroutine(CallYourScores());
+		    } 
+	    }
     }
 
     //重置初始位置
@@ -166,21 +186,13 @@ public class ArcSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     //实例化子弹
     private void InstantiateBullet()
     {
-	    this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[0], 0.1f);
+	    AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[0], 0.1f);
 
 	    UIManager.bulletTime--;
 	    if (UIManager.bulletTime < 0)
 	    {
-		    this.AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[6], 0.1f);
 		    timer.HadSuccess = 1;
-		    camera.transform.DOMove(new Vector3(0.2799f, -1.010172f, 7.6226f), 2.0f);
-		    camera.transform.DORotate(new Vector3(0, 0, 0), 2.0f);
-		    Camera.main.orthographic = true;
-		    Camera.main.orthographicSize = 4.2f;
-		    camera.GetComponentInParent<Rigidbody>().velocity = Vector3.zero;
-		    
-		    StartCoroutine(CallYourScores());
-		    Debug.Log("show");
+		    AudioSource.PlayOneShot(soundEffectsInGame.soundEffects[6], 0.1f);
 		    return;
 	    }
         bulletObj = Instantiate(bullets, player.transform.position, Quaternion.identity);
@@ -196,10 +208,11 @@ public class ArcSlider : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     
     IEnumerator CallYourScores()
     {
-	    yield return new WaitForSeconds(2);
+	    yield return new WaitForSeconds(1);
 	    GameObject.Find("Blood").SetActive(false);
 	    GameObject.Find("BulletTimeText").SetActive(false);
-	    GameObject.Find("ChromaticRing").SetActive(false);
+	    GameObject.Find("ChromaticRing").GetComponent<Image>().DOFade(0, 0.5f);
+	    GameObject.Find("ChromaticPoint").GetComponent<Image>().DOFade(0, 0.5f);
 	    yourScore.SetActive(true);
 	    yourScore.transform.DOScale(new Vector3(1, 1, 0), 1f);
     }

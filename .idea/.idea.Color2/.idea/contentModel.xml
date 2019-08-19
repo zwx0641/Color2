@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\HP\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -290,6 +290,7 @@
             <e p="MoonMove.cs" t="Include" />
           </e>
           <e p="Music" t="Include">
+            <e p="AudioManager.cs" t="Include" />
             <e p="SoundEffectsInBegin.cs" t="Include" />
             <e p="SoundEffectsInGame.cs" t="Include" />
           </e>

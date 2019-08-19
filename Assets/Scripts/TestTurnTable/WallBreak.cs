@@ -91,7 +91,7 @@ public class WallBreak : MonoBehaviour
 */
                 falseShoot = false;
                 yourScore++;
-                level.text = yourScore.ToString();
+                level.text = yourScore.ToString()+"层";
                 gameObject.transform.DOLocalRotate(new Vector3(-90, 0, 0), 0.5f);
 
                 gameObject.transform.localPosition = new Vector3(gameObject.transform.localPosition.x, 

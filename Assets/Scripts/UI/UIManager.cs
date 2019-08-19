@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
     {
         if (bulletTime >= 0)
         {
-            bulletTimetext.text = bulletTime.ToString();
+            bulletTimetext.text = bulletTime.ToString()+"球";
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
@@ -85,8 +86,8 @@ public class PlayerMove : MonoBehaviour
                 Camera.main.orthographic = true;
                 Camera.main.orthographicSize = 4.2f;
                 transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
-
-                StartCoroutine(CallScores());
+                
+                
             }
 
             if (gameObject.transform.parent.name == "StoryMode2")
@@ -111,12 +112,24 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay(Collision other)
+    {
+        if (other.gameObject.tag == "outline")
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                StartCoroutine(CallScores());
+            }
+        }
+            
+    }
+
     IEnumerator CallScores()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         GameObject.Find("Blood").SetActive(false);
         GameObject.Find("BulletTimeText").SetActive(false);
-        GameObject.Find("ChromaticRing").SetActive(false);
+        GameObject.Find("ChromaticRing").GetComponent<Image>().DOFade(0, 0.5f);
         yourScore.SetActive(true);
         yourScore.transform.DOScale(new Vector3(1, 1, 0), 1f);
     }
