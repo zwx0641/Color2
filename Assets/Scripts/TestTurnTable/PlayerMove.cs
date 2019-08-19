@@ -62,7 +62,7 @@ public class PlayerMove : MonoBehaviour
 
             if (WallBreak.falseShoot)
             {
-                transform.GetComponent<Rigidbody>().velocity = Vector3.forward * speed * 5;
+                transform.GetComponent<Rigidbody>().velocity = Vector3.forward * speed * 10;
                 var shape5 = particleB.shape;
                 shape3.radius = 10.0f;
                 var shape6 = particleY.shape;
@@ -129,6 +129,7 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(1);
         GameObject.Find("Blood").SetActive(false);
         GameObject.Find("BulletTimeText").SetActive(false);
+        GameObject.Find("Level").SetActive(false);
         GameObject.Find("ChromaticRing").GetComponent<Image>().DOFade(0, 0.5f);
         yourScore.SetActive(true);
         yourScore.transform.DOScale(new Vector3(1, 1, 0), 1f);
